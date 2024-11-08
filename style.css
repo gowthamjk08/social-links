@@ -1,0 +1,79 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&display=swap');
+
+/* CSS reset propertity */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey900);
+}
+.container{
+    width: 380px;
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: var(--White);
+    background-color:var(--Grey800);
+    font-family: inter,monospace;
+    border-radius: 10px;
+}
+img{
+    width: 80px;
+    height:80px;
+    border-radius: 100%;
+}
+/* text styling start here */
+h1{
+    font-size:28px;
+    font-weight: 600;
+    margin: 15px 0 5px;
+}
+h3{
+    font-size:16px;
+    font-weight: 600;
+    color: var(--Green);
+}
+p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--White);
+    display: block;
+    background-color: var(--Grey700);
+    padding: 15px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+a:last-child{
+    margin-bottom: 0;
+}
+a:hover{
+    background-color: var(--Green);
+    color: var(--Grey900);
+    font-weight: bold;
+    transition: 300ms;
+}
+@media screen and (max-width:450px){
+    .container{
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+}
